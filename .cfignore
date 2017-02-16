@@ -1,0 +1,13 @@
+##
+.idea/
+
+#
+*.log
+
+#
+build/
+script/
+vendor/
+
+#
+local/
