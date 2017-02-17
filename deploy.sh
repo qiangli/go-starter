@@ -40,17 +40,6 @@ if [ "x$VERSION" = "x" ]; then
 fi
 
 #
-BUILD_DIR=$WORKSPACE/build
-
-#check build
-if [ -d $BUILD_DIR ]; then
-   echo "dist found"
-else
-   echo "dist not found, creating..."
-   mkdir -p $BUILD_DIR
-fi
-
-#
 cd $WORKSPACE
 
 #./script/cf-plugins.sh
@@ -79,19 +68,13 @@ function env_subst() {
 function deploy() {
     echo "Pushing service..."
 
-    env_subst manifest_env.yml $BUILD_DIR/manifest_${ENV}.yml
+    env_subst manifest_env.yml manifest.yml
 
-    cd $BUILD_DIR; if [ $? -ne 0 ]; then
-        echo "build folder missing."
-        return 1
-    fi
+    cat manifest.yml
 
-    pwd
-    cat manifest_${ENV}.yml
+#    cf bgd app-name-${ENV} #--smoke-test <path to test script>
 
-    #cf bgd aviation-ingestion-eot-${ENV} #--smoke-test <path to test script>
-
-    cf push -f $BUILD_DIR/manifest_${ENV}.yml; if [ $? -ne 0 ]; then
+    cf push -f manifest.yml; if [ $? -ne 0 ]; then
         echo "Deploy failed."
         return 1
     else

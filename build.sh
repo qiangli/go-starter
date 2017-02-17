@@ -20,7 +20,6 @@ fi
 
 #
 go version
-pwd
 
 #setenv
 if [ -f ./script/setenv.sh ]; then

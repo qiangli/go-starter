@@ -1,13 +1,12 @@
 ##
-.idea/
+.idea
 
 #
 *.log
 
 #
-build/
-script/
-vendor/
+build
+script
 
 #
-local/
+local

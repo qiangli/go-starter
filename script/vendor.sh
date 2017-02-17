@@ -39,8 +39,8 @@ echo "#### Vendoring..."
 
 pwd
 
-rm -rf Godeps
-rm -rf vendor
+#rm -rf Godeps
+#rm -rf vendor
 
 go get -d github.com/geaviation/goboot/web
 go get -d github.com/geaviation/goboot/web/gorilla
