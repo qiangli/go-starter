@@ -33,7 +33,14 @@ Deploy to GE Predix/Cloud Foundry
 
 Sign up for a free Predix account at: https://www.predix.io/registration/
 
-cf login -a <predix_url> -u <email> -p <password
+cf login -a [predix_endpoint] -u [email] -p [password]
+
+You should have got your password after signing up, to find your predix_endpoint, following the instructions on:
+https://www.predix.io/docs/?b=#hOTKiBl-Uva9INX3
+
+For Predix US-West: https://api.system.aws-usw02-pr.ice.predix.io
+
+To deploy to Predix:
 
 sh deploy.sh
 
