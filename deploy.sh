@@ -6,26 +6,22 @@
 
 #set -x
 
-#
-if [ "x$WORKSPACE" = "x" ]; then
-    echo "WORKSPACE not set"
+chmod +x ./vendor.sh
+./vendor.sh; if [ $? -ne 0 ]; then
+    echo "#### Vendoring failed, exiting..."
     exit 1
 fi
-
-cd $WORKSPACE; if [ $? -ne 0 ]; then
-    echo "$WORKSPACE does not exist, exiting..."
-    exit 1
-fi
-
 #
-if [ "x$ENV" = "x" ]; then
-    echo "ENV not set, using USER: $USER"
-    export ENV=$USER
-fi
+source ./script/setenv.sh
 
 #
 which cf; if [ $? -ne 0 ]; then
-    echo "cf not installed, exiting..."
+    echo "## cf not installed, exiting..."
+    exit 1
+fi
+
+#check login
+cf target; if [ $? -ne 0 ]; then
     exit 1
 fi
 
@@ -42,29 +38,26 @@ fi
 #
 cd $WORKSPACE
 
-#./script/cf-plugins.sh
-
-#setenv
-source ./script/setenv.sh
-
+#
+# Predix ENV specific settings if any
 if [ -f ./setenv-${ENV}.sh ]; then
-   echo "File ./setenv-${ENV}.sh exists."
+   echo "Sourcing ./setenv-${ENV}.sh ..."
    source ./setenv-${ENV}.sh
 fi
+
 #
 printenv
 
 #
-echo "Deploying to $ENV ..."
+echo "#### Deploying to $ENV ..."
 
 #
-function env_subst() {
-    local template=$1
-    local output=$2
-
-    eval "echo \"$(cat $template)\"" | cat - > $output
+function set_app_url() {
+    local domain_name=$(cf app $1|grep urls: |cut -d ' ' -f 2)
+    export APP_URL="https://${domain_name}"
 }
 
+#
 function deploy() {
     echo "Pushing service..."
 
@@ -75,17 +68,23 @@ function deploy() {
 #    cf bgd app-name-${ENV} #--smoke-test <path to test script>
 
     cf push -f manifest.yml; if [ $? -ne 0 ]; then
-        echo "Deploy failed."
         return 1
     else
-        echo "Deploy succeeded"
         return 0
     fi
 }
 
 deploy; if [ $? -ne 0 ]; then
+    echo "#### Deploy failed"
     exit 1
 fi
 
-echo "Done!"
+set_app_url ${APP_EXE}-${ENV}
+
+echo "#### Deploy successful"
+echo "VERSION: $VERSION"
+echo "BUILD: $BUILD"
+echo "APP_URL: $APP_URL"
+echo ""
+exit 0
 ##

@@ -3,45 +3,15 @@
 #set -x
 
 #
-if [ "x$WORKSPACE" = "x" ]; then
-    echo "WORKSPACE not set"
-    exit 1
-fi
-
-cd $WORKSPACE; if [ $? -ne 0 ]; then
-    echo "$WORKSPACE does not exist, exiting..."
-    exit 1
-fi
-
-which go; if [ $? -ne 0 ]; then
-    echo "GO not installed, exiting..."
-    exit 1
-fi
+source ./script/setenv.sh
 
 #
-go version
-
-#setenv
-if [ -f ./script/setenv.sh ]; then
-   echo "Sourcing ./script/setenv.sh."
-   source ./script/setenv.sh
-fi
-
 printenv
 
 #
-if [ -f ./script/vendor.sh ]; then
-    chmod +x ./script/vendor.sh
-    ./script/vendor.sh; if [ $? -ne 0 ]; then
-        echo "Vendoring failed, exiting..."
-        exit 1
-    fi
-fi
+echo "#### Building ..."
 #
-
 function build_module() {
-    echo "##### Building ..."
-
     echo "## Cleaning ..."
     go clean -x
 
@@ -55,19 +25,18 @@ function build_module() {
     go install -x
 
     if [ $? -ne 0 ]; then
-        echo "#### Build failed."
         return 1
     else
-        echo "#### Build successful."
         return 0
     fi
 }
 
 build_module; if [ $? -ne 0 ]; then
+    echo "#### Build failded"
     exit 1
 fi
 
-echo "Done"
+echo "#### Build successful"
 
 exit 0
 ##
