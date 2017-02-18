@@ -1,6 +1,6 @@
 ---
 applications:
-- name: goboot-starter-${ENV}
+- name: ${APP_EXE}-${ENV}
   memory: 128M
   instances: 1
   command: /app/bin/${APP_EXE}

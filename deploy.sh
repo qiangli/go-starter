@@ -74,6 +74,9 @@ function deploy() {
     fi
 }
 
+rmdir ./vendor
+rmdir ./Godeps
+
 deploy; if [ $? -ne 0 ]; then
     echo "#### Deploy failed"
     exit 1
