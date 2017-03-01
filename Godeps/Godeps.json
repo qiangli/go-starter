@@ -35,27 +35,27 @@
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/config",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/logging",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web/gorilla",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web/jsonrest",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web/restful",
-			"Rev": "31793cf00c06fa57edea7e23ea1dbc9f7c760a80"
+			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
 		},
 		{
 			"ImportPath": "github.com/gorilla/mux",
