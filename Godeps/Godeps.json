@@ -9,53 +9,25 @@
 			"Rev": "881bee4e20a5d11a6a88a5667c6f292072ac1963"
 		},
 		{
-			"ImportPath": "github.com/ant0ine/go-json-rest/rest",
-			"Comment": "v3.3.2",
-			"Rev": "ce4b71cdf7ba29ef443d704bd923f5bbf281ee30"
-		},
-		{
-			"ImportPath": "github.com/ant0ine/go-json-rest/rest/trie",
-			"Comment": "v3.3.2",
-			"Rev": "ce4b71cdf7ba29ef443d704bd923f5bbf281ee30"
-		},
-		{
 			"ImportPath": "github.com/cloudfoundry-community/go-cfenv",
 			"Comment": "v1.14.0-7-gc567d77",
 			"Rev": "c567d77dab8551bc4077e68e5a04415f1d74a911"
 		},
 		{
-			"ImportPath": "github.com/emicklei/go-restful",
-			"Comment": "2.1.0",
-			"Rev": "371e2e97d294f258c59be5b2522958ce20ff461a"
-		},
-		{
-			"ImportPath": "github.com/emicklei/go-restful/log",
-			"Comment": "2.1.0",
-			"Rev": "371e2e97d294f258c59be5b2522958ce20ff461a"
-		},
-		{
 			"ImportPath": "github.com/geaviation/goboot/config",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
+			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/logging",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
+			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
+			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web/gorilla",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
-		},
-		{
-			"ImportPath": "github.com/geaviation/goboot/web/jsonrest",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
-		},
-		{
-			"ImportPath": "github.com/geaviation/goboot/web/restful",
-			"Rev": "1ce9b2e9971f13e946caf6ab6de4a63e9c47133b"
+			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
 		},
 		{
 			"ImportPath": "github.com/gorilla/mux",
