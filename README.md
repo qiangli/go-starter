@@ -4,7 +4,11 @@ goboot-starter is a sample micro service app built upon goboot core packages wri
 You should be able to install and run this starter app locally or deploy to GE Predix platform as is.
 
 
-If you are new to Go, you may start here: https://golang.org/
+If you are new to Go, you may start here:
+
+https://golang.org/doc/code.html
+
+https://golang.org/
 
 
 To run goboot-starter locally after you have installed Go:
