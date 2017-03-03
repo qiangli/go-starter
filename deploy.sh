@@ -5,7 +5,9 @@
 # VERSION
 
 #set -x
-
+rm -rf ./vendor
+rm -rf ./Godeps
+#
 chmod +x ./vendor.sh
 ./vendor.sh; if [ $? -ne 0 ]; then
     echo "#### Vendoring failed, exiting..."

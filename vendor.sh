@@ -4,9 +4,6 @@
 
 echo "#### Vendoring..."
 #
-rm -rf ./vendor
-rm -rf ./Godeps
-#
 source ./script/setenv.sh
 
 #
