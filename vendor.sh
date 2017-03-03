@@ -23,6 +23,8 @@ go get -d github.com/geaviation/goboot/web/gorilla
 go get -d github.com/geaviation/goboot/web/jsonrest
 go get -d github.com/ant0ine/go-json-rest/rest
 go get -d github.com/geaviation/goboot/web/restful
+#
+go get -d golang.org/x/sys/unix
 
 godep save; if [ $? -ne 0 ]; then
     echo "godev failed"
