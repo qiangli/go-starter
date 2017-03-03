@@ -15,19 +15,19 @@
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/config",
-			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
+			"Rev": "1597a458cfa78720972ca3277ce71a31cdad8d7f"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/logging",
-			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
+			"Rev": "1597a458cfa78720972ca3277ce71a31cdad8d7f"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web",
-			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
+			"Rev": "1597a458cfa78720972ca3277ce71a31cdad8d7f"
 		},
 		{
 			"ImportPath": "github.com/geaviation/goboot/web/gorilla",
-			"Rev": "6c6cd58d9b4238acb591c9c564ebd14526413a78"
+			"Rev": "1597a458cfa78720972ca3277ce71a31cdad8d7f"
 		},
 		{
 			"ImportPath": "github.com/gorilla/mux",
