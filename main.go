@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-const files string = "public/"
+const files string = "static/"
 
 func main() {
 	router := mux.NewRouter()
@@ -34,7 +34,7 @@ func main() {
 		gorilla.HandleJson(m, res, req)
 	})
 
-	// Serve static files from public/ folder if found
+	// Serve static files from static/ folder if found
 	// or else show the following default page
 	defaultPage := `<html><body><a href="/api/health">Health Service</a><br />Current Time: %v</body></html>`
 
