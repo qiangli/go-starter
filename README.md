@@ -1,7 +1,8 @@
 #
 
-goboot-starter is a sample micro service app built upon goboot core packages written in the Go language.
-You should be able to install and run this starter app locally or deploy to GE Predix platform as is.
+goboot-starter is a micro service app built upon goboot core packages written in the Go open source programming language.
+You should be able to install and run this app locally and deploy to General Electric's Predix Cloud Platform
+to jump start your project in no time.
 
 Preparation:
 
@@ -84,3 +85,4 @@ Congratulations! You have built and run the starter microservice locally and dep
 
 
 
+This project is sponsored by GE Aviation
