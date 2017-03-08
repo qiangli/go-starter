@@ -11,13 +11,13 @@ and have signed up with Predix (free) if you plan to deploy to Predix Cloud Plat
 
 To verify, open a terminal and run the following commands:
 
-#go version
+$go version
 go version go1.7.5 darwin/amd64
 
-#git --version
+$git --version
 git version 2.10.0
 
-#cf version
+$cf version
 cf version 6.21.1+6fd3c9f-2016-08-10
 
 If you see console output similar to the above, you are ready to build and deploy.
