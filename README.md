@@ -4,6 +4,8 @@ goboot-starter is a micro service app built upon goboot core packages written in
 You should be able to install and run this app locally and deploy to General Electric's Predix Cloud Platform
 to jump start your project in no time.
 
+Watch video: https://youtu.be/q6kKJY2Ho98
+
 Preparation:
 
 You should have git and go installed on your machine before you start. You will also need cf installed
