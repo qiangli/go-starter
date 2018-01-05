@@ -1,6 +1,6 @@
 #
 
-goboot-starter is a micro service app built upon goboot core packages written in the Go open source programming language.
+go2-starter is a micro service app built upon go2 core packages written in the Go open source programming language.
 You should be able to install and run this app locally and deploy to General Electric's Predix Cloud Platform
 to jump start your project in no time.
 
@@ -40,14 +40,14 @@ https://golang.org/doc/code.html
 https://golang.org/
 
 
-To run goboot-starter locally after you have installed Go:
+To run go2-starter locally after you have installed Go:
 
 
-git clone https://github.com/geaviation/goboot-starter.git [my_project]
+git clone https://github.com/qiangli/go2-starter.git [my_project]
 
 cd [my_project]
 
-where [my_project] is your prefered directory name (as well as your app name), it will default to goboot-starter if not specified.
+where [my_project] is your prefered directory name (as well as your app name), it will default to go2-starter if not specified.
 
 To start the  app:
 

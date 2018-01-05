@@ -1,6 +1,6 @@
 ---
 layout: hero
-title: Goboot starter microapp
+title: go2 starter microapp
 id: home
 ---
 
@@ -8,7 +8,7 @@ id: home
   <div class="marketing-row">
     <div class="marketing-col">
       <h3></h3>
-      <p>goboot-starter is a micro service app built upon goboot core packages written in the Go open source programming language.
+      <p>go2-starter is a micro service app built upon go2 core packages written in the Go open source programming language.
 You should be able to install and run this app locally and deploy to General Electric's Predix Cloud Platform
 to jump start your project in no time.</p>
     </div>

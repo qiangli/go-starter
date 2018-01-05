@@ -4,7 +4,7 @@
 
 echo "#### Vendoring..."
 #
-source ./script/setenv.sh
+source setenv.sh
 
 #
 which godep; if [ $? -ne 0 ]; then
@@ -15,11 +15,11 @@ fi
 echo
 
 #
-go get -d github.com/geaviation/goboot/web
-go get -d github.com/geaviation/goboot/web/gorilla
-go get -d github.com/geaviation/goboot/web/jsonrest
+go get -d github.com/qiangli/go2/web
+go get -d github.com/qiangli/go2/web/gorilla
+go get -d github.com/qiangli/go2/web/jsonrest
 go get -d github.com/ant0ine/go-json-rest/rest
-go get -d github.com/geaviation/goboot/web/restful
+go get -d github.com/qiangli/go2/web/restful
 #
 go get -d golang.org/x/sys/unix
 

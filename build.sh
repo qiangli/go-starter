@@ -3,7 +3,7 @@
 #set -x
 
 #
-source ./script/setenv.sh
+source setenv.sh
 
 #
 printenv

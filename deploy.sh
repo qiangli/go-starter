@@ -5,16 +5,16 @@
 # VERSION
 
 #set -x
-rm -rf ./vendor
-rm -rf ./Godeps
+#rm -rf ./vendor
+#rm -rf ./Godeps
+##
+#chmod +x ./vendor.sh
+#./vendor.sh; if [ $? -ne 0 ]; then
+#    echo "#### Vendoring failed, exiting..."
+#    exit 1
+#fi
 #
-chmod +x ./vendor.sh
-./vendor.sh; if [ $? -ne 0 ]; then
-    echo "#### Vendoring failed, exiting..."
-    exit 1
-fi
-#
-source ./script/setenv.sh
+source setenv.sh
 
 #
 which cf; if [ $? -ne 0 ]; then
@@ -75,9 +75,6 @@ function deploy() {
         return 0
     fi
 }
-
-rmdir ./vendor
-rmdir ./Godeps
 
 deploy; if [ $? -ne 0 ]; then
     echo "#### Deploy failed"

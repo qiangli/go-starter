@@ -6,16 +6,16 @@ applications:
   command: /app/bin/${APP_EXE}
   buildpack: https://github.com/cloudfoundry/go-buildpack.git
 #  services:
-#    - goboot-rabbitmq
-#    - goboot-postgres
-#    - goboot-logstash
-#    - goboot-redis
+#    - go2-rabbitmq
+#    - go2-postgres
+#    - go2-logstash
+#    - go2-redis
   env:
-    GOVERSION: go1.7
+#    GOVERSION: go1.7
 #    uaa_url: $uaa_url
 #    uaa_client_id: $uaa_client_id
 #    uaa_client_secret: $uaa_client_secret
-    goboot_logging: >
+    go2_logging: >
       {
         \"level\": \"$log_level\"
       }
